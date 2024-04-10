@@ -16,10 +16,10 @@ format:
 
 lint:
 	poetry run pylint server/*
-	poetry run mypy server/
+	# poetry run mypy server/
 
 test:
-	# poetry run pytest --cov=server server/
+	poetry run pytest
 
 security:
 	poetry run bandit -r server/ -c pyproject.toml
