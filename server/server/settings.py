@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # plugin
     # application
+    "user",
 ]
 
 MIDDLEWARE = [
@@ -86,6 +87,9 @@ DATABASES = {
     }
 }
 
+NULLABLE = {"default": None, "null": True, "blank": True}
+
+AUTH_USER_MODEL = "user.User"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
