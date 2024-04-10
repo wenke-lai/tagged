@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     # plugin
     # application
     "user",
+    "asset",
+    "tag",
 ]
 
 MIDDLEWARE = [
